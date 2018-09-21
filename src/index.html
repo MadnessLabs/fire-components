@@ -6,10 +6,31 @@
   <title>Fire Components by Madness Labs</title>
   <script src="/build/firecomponents.js"></script>
 
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBUs-NL-f_v19gwH-0CWz8jaEmzVQy-NCA",
+      authDomain: "fire-components.firebaseapp.com",
+      databaseURL: "https://fire-components.firebaseio.com",
+      projectId: "fire-components",
+      storageBucket: "",
+      messagingSenderId: "849878192512"
+    };
+    firebase.initializeApp(config);
+
+    const firestore = firebase.firestore();
+    firestore.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+
 </head>
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <fire-components></fire-components>
 
 </body>
 </html>

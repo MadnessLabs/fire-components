@@ -15,9 +15,14 @@
     "test": "jest",
     "test.watch": "jest --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ionic/core": "^4.0.0-beta.11",
+    "firebase": "^5.5.1",
+    "rxfire": "^3.0.3",
+    "rxjs": "^6.3.2"
+  },
   "devDependencies": {
-    "@stencil/core": "^0.11.0",
+    "@stencil/core": "^0.13.0-13",
     "@types/jest": "^23.3.1",
     "jest": "^23.4.2"
   },
